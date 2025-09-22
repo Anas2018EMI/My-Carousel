@@ -1,0 +1,81 @@
+body {
+  text-align: center;
+}
+
+ul {
+  height: 130px;
+  width: 1300px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+  white-space: nowrap; /* Forces all list items on one line */
+  transition: transform 1s;
+}
+
+ul img {
+  width: 130px;
+  height: 130px;
+  display: block; /* removes extra space near images */
+}
+
+ul li {
+  display: inline-block; /* removes extra space between list items */
+  position: relative;
+  transition: transform 1s;
+  z-index: 1;
+}
+
+#carousel {
+  width: auto;
+  height: 130px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+}
+
+#carousel .slides {
+  width: 390px;
+  overflow: hidden;
+}
+
+#carousel .slides img {
+  display: inline-block; /* removes extra space between list items */
+  position: relative;
+
+  z-index: 1;
+}
+
+#carousel .carousel-button {
+  background-color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 7;
+}
+
+.arrow {
+  padding: 0;
+  background: #ddd;
+  height: 26px;
+  border-radius: 15px;
+  border: 1px solid gray;
+  font-size: 24px;
+  line-height: 24px;
+  color: #444;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.arrow:focus {
+  outline: none;
+}
+
+.arrow:hover {
+  background: #ccc;
+  cursor: pointer;
+}
+
+.invisible {
+  display: none;
+}
